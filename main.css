@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke{
+    border: 1px solid black;
+    padding: .5rem;
+    position: relative;
+    margin: .5rem;
+    border-radius: .5rem;
+    min-width: 50%;
+}
+
+i{
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    cursor: pointer;
+}
+
+.joke-content{
+    display: none;
+    padding: .5rem 0rem;
+}
+
+
+.joke:nth-child(even){
+    background-color: rgba(2, 202, 12, 0.493);
+}
+
+.active .joke-content{
+    display: block;
+ 
+}
+
+img{
+    width: 70px;
+    height: 50px;
+    border-radius: 50px;
+   
+}
+
+@media screen and (max-width:992px) {
+    .joke{
+        width: 100%;
+    }
+}
